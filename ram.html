@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Hardware website: RAM Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Here you can find information about all the diet plans we suggest</h1>
+
+        <div id="social">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.jpg" alt="facebook">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/x.jpg" alt="x/twitter">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin.jpg" alt="linkedin">
+            </a>
+        </div>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="motherboard.html">Healthy eating</a></li>
+                <li><a href="cpu.html">Sleeping habits</a></li>
+                <li><a href="gpu.html">Excercise</a></li>
+                <li><a class="active" href="ram.html">Gallery</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="title">
+                <h2>Gallery</h2>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/Screenshot 2025-02-10 140028.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/Screenshot 2025-01-29 120851.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/Screenshot 2025-01-29 122230.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+            <div class="blocks left">
+                <img src="images/Screenshot 2025-01-29 123412.png" alt="">
+                <p>Diet Plan
+                </p>
+                <p>A well-balanced diet plan can help you maintain a healthy weight, boost your energy levels, and promote overall well-being. Here’s a sample diet plan that focuses on wholesome, nutrient-dense foods and includes all the essential food groups.</p>
+                  <p>Adjust portion sizes based on your activity level, age, and specific goals (e.g., weight loss, muscle building).
+                    If you have food allergies or intolerances, replace ingredients accordingly (e.g., use dairy-free yogurt or gluten-free grains).
+                    If you prefer plant-based options, replace animal proteins with plant-based alternatives like tempeh, lentils, or beans.</p>
+            </div>
+
+                  <div class="blocks right">
+                    <img src="images/Screenshot 2025-02-10 144644.png" alt="">
+                    <p>Excercise plan
+                    </p>
+                    <p>This work out targets strenght, cardio, and flexebility for overall fitness</p>
+                    <p>
+                        Warm-up (5-10 minutes)
+                        Jumping jacks - 1 mind
+                        Arm circles - 30 sec forward, 30 sec backward
+                        Bodyweight squats - 10 reps
+                        leg swings - 10 reps per leg 
+                        high knees - 30 sec
+                    </p>
+                      </div>
+
+                      <div class="blocks left">
+                        <img src="images/Screenshot 2025-02-10 144742.png" alt="">
+                        <p>How to stay fit and healthy
+                        </p>
+                        <p> Staying fit and healthy requires a combination of regular excercise, balanced nutrition, proper hydration, and metal well-being. Engaging in physical activities like cardio, strenghth training, and flexebility exercises helps maintain a strong and active body.
+                        </p>
+                          </div>
+
+
+
+        </div>
+
+        <div id="footer">
+            <a href="index.html">Home</a>  |  <a href="motherboard.html">Motherboard</a>  |  <a href="cpu.html">CPU</a>  |  <a href="gpu.html">GPU</a>  |  <a href="ram.html">RAM</a>  |  <a href="contact.html">CONTACT US</a>
+        </div>
+
+
+
+    </div>
+</body>
+
+
+</html>
